@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500&display=swap');
+
+
+:root {
+/* CSS HEX */
+/*tart-orange:*/
+--pop: #fe4a49ff;
+/*orange-yellow-crayola*/
+--bright: #fed766ff;
+/*blue-munsell*/
+--link: #009fb7ff;
+/*gainsboro*/
+--grey: #e6e6eaff;
+/*ghost-white*/
+--background: #f4f4f8ff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+
+}
+
+a {
+  color: #1f1f1f
+}
+a:hover {
+  color: var(--link);
+}
+
+body {
+  background-color: var(--background);
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+
+/* Flex Layout */
+.main-container {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 4rem 0 0 5rem;
+  width: 90vw;
+}
+.left {
+  display:flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  width: 10vw;
+  max-height: 80vh;
+  margin-right: 4rem;
+  justify-content: center;
+}
+
+.right {
+  box-sizing: border-box;
+  display:flex;
+  /* justify-content: space-between; */
+  flex-flow: column nowrap;
+  max-height: 80vh;
+  width: 85vw;
+  align-items: flex-start;
+}
+
+.logo {
+  box-sizing: border-box;
+  width: 15vw;
+  padding-top: 20px;
+  height: 10vh;
+}
+
+.menu {
+  padding-top: 2.5rem;
+  box-sizing: border-box;
+  width: 15vw;
+  overflow: scroll;
+  height: 70vh;
+  justify-content: center;
+}
+
+.footer-social{
+  padding-left: 1em;
+  padding-top: 1.5em;
+  box-sizing: border-box;
+  position:absolute;
+  align-self: flex-end;
+  width: 15vw;
+  height: 7vh;
+  overflow: scroll;
+}
+.footer-social a {
+  text-decoration: none;
+}
+
+.controls { 
+  box-sizing: border-box;
+  font-weight: 300;
+  max-height: 4vh;
+  display: flex;
+
+}
+
+.logo img {
+  width: 14vw;
+}
+
+/* Menu Styling */
+.menu-mobile {
+  visibility: hidden;
+}
+.mainmenu li {
+  list-style: none;
+  cursor: pointer;
+  padding: 5px 0;
+}
+.mainmenu h4 {
+  padding: 25px 0 2px 0;
+  font-weight: 400;
+  font-size: larger;
+}
+.mainmenu li:hover{
+  color: var(--link);
+}
+.mainmenu li a:active {
+  color: var(--pop);
+  text-decoration: underline;
+}
+
+/* Content Styling */
+.content {
+  display: flex;
+  max-width: 80vw;
+}
+
+/* slideshow styling */
+.slideshow-container {
+  order: 1;
+  max-width: 80vw;
+  font-weight: 300;
+  max-height: 100vh;
+  height: 100%;
+  position: relative;
+}
+
+.slideshow-container img {
+  max-height: 75vh;
+  height:100%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* grid styling */
+.image-grid {
+  order:2;
+  max-width: 60vw;
+  justify-content: flex-start;
+  font-weight: 300;
+  max-height: 100vh;
+  height: 100%;
+  display: none;
+  padding-top: 1rem;
+}
+
+.toggleControls {
+  text-align: right;
+}
+
+.openGrid {
+  
+}
+.closeGrid {
+  visibility: hidden;
+  /* position: absolute;
+  right: 9rem;
+  padding-bottom: 1rem; */
+}
+
+/* Image Grid styling */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 .5rem;
+}
+.column img {
+  margin: 0.5rem;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+/* Footer Styling */
+.footer-social li {
+  font-size: larger;
+  list-style: none;
+  display: inline-block;
+  padding: 0 5px;
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
+  <link href="css/main.css" rel="stylesheet">
+  <link 
+    rel="stylesheet" 
+    href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" 
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" 
+    crossorigin="anonymous">
+  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+  <script src="scripts/script.js" defer></script>
+
+  <title>Adam Ryan Photography</title>
+</head>
+<body>
+  <div class="main-container">
+
+    <div class="left">
+      <div class="logo">
+        <img src="images/arp-logo.png" alt="Logo">
+      </div>
+
+      <div class="menu">
+        <ul class="mainmenu">
+          <h4> | PORTFOLIO |</h4>
+          <li>Fire</li>
+          <li>Sky</li>
+          <li>Earth</li>
+          <li>Water</li>
+          <h4> | PROJECTS |</h4>
+          <li>Project #1</li>
+          <li>Project #2</li>
+          <li>Project #3</li>
+          <h4> | INFO |</h4>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="menu-mobile">
+        <ul class="mainmenu-mobile">
+          <h4> | PORTFOLIO |</h4>
+          <li>Fire</li>
+          <li>Sky</li>
+          <li>Earth</li>
+          <li>Water</li>
+          <h4> | PROJECTS |</h4>
+          <li>Project #1</li>
+          <li>Project #2</li>
+          <li>Project #3</li>
+          <h4> | INFO |</h4>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <ul>
+          <li><a href="https://adamryan.artfunnels.com" target="_blank" title="View my gallery"><i class="fas fa-camera fa-xs"></i></i></a></li>
+          <li><a href="https://www.instagram.com/adamryanphoto" title="Instagram" target="_blank"><i class="fab fa-instagram fa-xs" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.facebook.com/adamryanphotography" title="Facebook"><i class="fab fa-facebook-f fa-xs" aria-hidden="true"></i></a></li>
+          <li><a href="mailto:adam@adamryanphotography.ca" title="Email me!"><i class="fas fa-at fa-xs" aria-hidden="true"></i></a></li>
+          <li><a href="mailto:adam@adamryanphotography.ca" title="Email me!"><i class="fas fa-share fa-xs"></i>share</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="controls">
+        <div>
+          <a href="#" class="prev" onclick="plusSlides(-1)">previous</a> / <a href="#" class="next" onclick="plusSlides(1)">next</a>
+          <span class="num-display"></span>
+        </div>
+        <span class="toggleControls">
+          <div class="openGrid">
+            <a href="#" class="gallery-toggle" onclick="toggleGrid()">
+            <img src="images/gallery.png" width="6%">
+            </a>
+          </div>
+      </span>
+      <div class="closeGrid">
+        <a href="#" class="slide-toggle" onclick="toggleSlide()">
+        <img src="images/close.png" width="3%" alt="">
+        </a>
+      </div>
+      
+    </div>
+      <div class="content">
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <a href="#" class="next"onclick="plusSlides(1)">
+              <img src="images/arp5.jpg">
+            </a>
+            <div class="text">Caption 1</div>
+          </div>
+
+          <div class="mySlides fade">
+            <a href="#" class="next"onclick="plusSlides(1)">
+              <img src="images/arp1.jpg">
+            </a>
+            <div class="text">Caption Two</div>
+          </div>
+
+          <div class="mySlides fade">
+            <a href="#" class="next"onclick="plusSlides(1)">
+              <img src="images/arp2.jpg">
+            </a>
+            <div class="text">Caption Three</div>
+          </div>
+
+          <div class="mySlides fade">
+            <a href="#" class="next"onclick="plusSlides(1)">
+              <img src="images/arp3.jpg">
+            </a>
+            <div class="text">Caption Four</div>
+          </div>
+
+          <div class="mySlides fade">
+            <a href="#" class="next"onclick="plusSlides(1)">
+              <img src="images/arp4.jpg">
+            </a>
+            <div class="text">Caption Five</div>
+          </div>
+        </div>
+
+        <!-- imgage grid -->
+        <div class="image-grid">
+          <div class="row"> 
+            <div class="column">
+              <a href="#" onclick="retrieveImage(2)"><img src="images/arp2.jpg"></a>
+              <a href="#" onclick="retrieveImage(3)""><img src="images/arp3.jpg"></a>
+              <a href="#" onclick="retrieveImage(4)"><img src="images/arp4.jpg"></a>
+              <a href="#" onclick="retrieveImage(5)"><img src="images/arp5.jpg"></a>
+              <a href="#" onclick="retrieveImage(1)"><img src="images/arp1.jpg"></a>
+            </div>
+            <div class="column">
+              <a href="#" onclick="retrieveImage(3)"><img src="images/arp3.jpg"></a>
+              <a href="#" onclick="retrieveImage(3)""><img src="images/arp4.jpg"></a>
+              <a href="#" onclick="retrieveImage(5)"><img src="images/arp5.jpg"></a>
+              <a href="#" onclick="retrieveImage(1)"><img src="images/arp1.jpg"></a>
+              <a href="#" onclick="retrieveImage(2)"><img src="images/arp2.jpg"></a>
+            </div> 
+            <div class="column">
+              <img src="images/arp5.jpg">
+              <img src="images/arp4.jpg">
+              <img src="images/arp3.jpg">
+              <img src="images/arp2.jpg">
+              <img src="images/arp1.jpg">
+            </div>
+            <div class="column">
+              <img src="images/arp4.jpg">
+              <img src="images/arp1.jpg">
+              <img src="images/arp2.jpg">
+              <img src="images/arp3.jpg">
+              <img src="images/arp5.jpg">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>

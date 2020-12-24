@@ -1,0 +1,60 @@
+        <!-- Slider main container -->
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="images/arp5.jpg" alt="Image 5"><br><span class="caption">Image 5</span></div>
+              <div class="swiper-slide"><img src="images/arp1.jpg" alt="Image 1"><br><span class="caption">Image 1</span></div>
+              <div class="swiper-slide"><img src="images/arp2.jpg" alt="Image 2"><br><span class="caption">Image 2</span></div>
+              <div class="swiper-slide"><img src="images/arp3.jpg" alt="Image 3"><br><span class="caption">Image 3</span></div>
+              <div class="swiper-slide"><img src="images/arp4.jpg" alt="Image 4"><br><span class="caption">Image 4</span></div>
+              ...
+          </div>
+        </div>
+
+.swiper-container {
+
+  max-width: 80vw;
+  font-weight: 300;
+  max-height: 100vh;
+  height: 100%;
+}
+.swiper-container img {
+  max-height: 75vh;
+  height:100%;
+}
+
+
+
+const mySwiper = new Swiper('.swiper-container', {
+  // Optional parameters
+  preloadImages: true,
+  updateOnImagesReady: true,
+  effect: 'fade',
+  fadeEffect: {
+    duration: 2,
+    crossFade: true
+  },
+  direction: 'horizontal',
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.next',
+    prevEl: '.prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+})
+
+
+
+
+        
